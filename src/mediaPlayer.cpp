@@ -32,7 +32,7 @@ mediaPlayer::mediaPlayer()
     video = new omPlayer();
 
     //IMAGE
-    image = new imgPlayer();
+    //image = new imgPlayer();
 }
 
 /**
@@ -50,7 +50,7 @@ void mediaPlayer::init()
     sound->setListener(this);
 
     //IMAGE
-    image->init(textured);
+    //image->init(textured);
 }
 
 
@@ -90,8 +90,8 @@ void mediaPlayer::update()
     video->setBlur(this->blur);
 
     //IMAGE
-    image->setZoom(this->zoom);
-    image->setBlur(this->blur);
+    //image->setZoom(this->zoom);
+    //image->setBlur(this->blur);
 
     //SOUND
     sound->volume(this->volume);
@@ -110,7 +110,7 @@ void mediaPlayer::draw()
     video->show();
 
     //IMAGE
-    image->show();
+    //image->show();
 
     //MESSAGE
     if (!this->isPlaying()) this->displayStandby();
@@ -260,7 +260,7 @@ void mediaPlayer::play(int index)
         if (ext == "mp4" or ext == "mov" or ext == "avi" or ext == "m4v")
         { 
             sound->stop();
-            image->stop();
+            //image->stop();
 	    string videoPath = file.path();
 	    string audioFilePath = "/media/pi/usb1/audio/audio" + videoPath.substr(videoPath.length()-5, 1) + ".wav";
 	    sound->play(audioFilePath); 
@@ -270,7 +270,7 @@ void mediaPlayer::play(int index)
         else if (ext == "wav" or ext == "mp3" or ext == "aif" or ext == "ogg")
         {
             video->stop();
-            image->stop();
+            //image->stop();
             sound->play( file.path() );
         }
         //IMAGE
@@ -278,7 +278,7 @@ void mediaPlayer::play(int index)
         {
             video->stop();
             sound->stop();
-            image->play( file.path() );
+            //image->play( file.path() );
         }
     }
     else  this->stop();
@@ -385,7 +385,7 @@ void mediaPlayer::stop()
     //VIDEO & SOUND    
     video->stop();
     sound->stop();
-    image->stop();
+    //image->stop();
     this->currentIndex = 0;
     this->nextIndex = 0;
 }
@@ -450,7 +450,7 @@ void mediaPlayer::seek(int timemilli){
 bool mediaPlayer::isPlaying()
 {
     //VIDEO & SOUND
-    return (video->isPlaying() or sound->isPlaying() or image->isPlaying());
+    return (video->isPlaying() or sound->isPlaying());// or image->isPlaying());
 }
 
 
