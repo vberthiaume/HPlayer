@@ -84,8 +84,8 @@ void mediaPlayer::update()
 
     //VIDEO
     video->volume(this->volume);
-    video->setMuted(this->mute);
-    //video->setMuted(true);
+    //video->setMuted(this->mute);
+    video->setMuted(true);
     video->setZoom(this->zoom);
     video->setBlur(this->blur);
 
@@ -314,7 +314,6 @@ void mediaPlayer::next()
 void mediaPlayer::onVideoEnd()
 {
     this->next();
-    sound->stop();
 }
 
 
