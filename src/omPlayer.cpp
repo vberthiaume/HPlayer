@@ -169,7 +169,7 @@ void omPlayer::show()
 	if (!this->isPlaying()) return;
 
 	//ANTI FREEZE
-	this->iceBreak();
+	//this->iceBreak();
 
 	//CHECK IF TEXTURE MODE ENABLED AND VALID
 	if(!this->isTextureEnabled()) return;
