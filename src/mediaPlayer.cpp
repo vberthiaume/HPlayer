@@ -258,9 +258,13 @@ void mediaPlayer::play(int index)
         //VIDEO
         if (ext == "mp4" or ext == "mov" or ext == "avi" or ext == "m4v")
         { 
-            //sound->stop();
+            sound->stop();
             image->stop();
-            video->play( file.path() );
+	    string videoPath = file.path();
+	    string audioFilePath = "/media/pi/usb1/audio/audio" + videoPath.substr(videoPath.length()-5, 1) + ".wav";
+            video->play(videoPath);
+	    sound->play(audioFilePath); 
+	    //cout << audioFilePath << "\n";
         }
         //SOUND
         else if (ext == "wav" or ext == "mp3" or ext == "aif" or ext == "ogg")
