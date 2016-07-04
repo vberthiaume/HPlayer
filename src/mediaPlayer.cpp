@@ -258,7 +258,7 @@ void mediaPlayer::play(int index)
         //VIDEO
         if (ext == "mp4" or ext == "mov" or ext == "avi" or ext == "m4v")
         { 
-            sound->stop();
+            //sound->stop();
             image->stop();
             video->play( file.path() );
         }
