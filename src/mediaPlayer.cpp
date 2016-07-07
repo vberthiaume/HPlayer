@@ -84,7 +84,8 @@ void mediaPlayer::update()
 
     //VIDEO
     video->volume(this->volume);
-    video->setMuted(this->mute);
+    //video->setMuted(this->mute);
+    video->setMuted(true);
     video->setZoom(this->zoom);
     video->setBlur(this->blur);
 
@@ -262,9 +263,8 @@ void mediaPlayer::play(int index)
             image->stop();
 	    string videoPath = file.path();
 	    string audioFilePath = "/media/pi/usb1/audio/audio" + videoPath.substr(videoPath.length()-5, 1) + ".wav";
+	    //sound->play(audioFilePath); 
             video->play(videoPath);
-	    sound->play(audioFilePath); 
-	    //cout << audioFilePath << "\n";
         }
         //SOUND
         else if (ext == "wav" or ext == "mp3" or ext == "aif" or ext == "ogg")

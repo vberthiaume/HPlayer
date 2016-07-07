@@ -1,0 +1,112 @@
+===================================== PLAYS THROUGH ===========================================================
+
+pi@raspberrypi ~/openFrameworks/apps/myApps/HPlayer $ bin/HPlayer --media /media/pi/usb1/video5.mp4 --start 1
+[notice ] -HP- WOKE UP 
+[warning] ofAppEGLWindow: init(): X11 not availble on RPI yet, using a native window instead
+[notice ] ofAppEGLWindow: setupRPiNativeWindow(): screenRect: 1920x1080
+[notice ] ofAppEGLWindow: setupRPiNativeWindow(): windowRect: 1920x1080
+[notice ] ofAppEGLWindow: createSurface(): setting up EGL Display
+[notice ] ofAppEGLWindow: createSurface(): EGL Display correctly set 0x1
+[notice ] ofAppEGLWindow: createSurface(): no current renderer selected
+[notice ] ofAppEGLWindow: createSurface(): default renderer detected
+[notice ] ofAppEGLWindow: createSurface(): surface created correctly
+[notice ] ofAppEGLWindow: createSurface(): API bound correctly
+[notice ] ofAppEGLWindow: createSurface(): -----EGL-----
+[notice ] ofAppEGLWindow: createSurface(): EGL_VERSION_MAJOR = 1
+[notice ] ofAppEGLWindow: createSurface(): EGL_VERSION_MINOR = 4
+[notice ] ofAppEGLWindow: createSurface(): EGL_CLIENT_APIS = OpenGL_ES OpenVG
+[notice ] ofAppEGLWindow: createSurface(): EGL_VENDOR = Broadcom
+[notice ] ofAppEGLWindow: createSurface(): EGL_VERSION = 1.4
+[notice ] ofAppEGLWindow: createSurface(): EGL_EXTENSIONS = EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_pixmap EGL_KHR_vg_parent_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_lock_surface 
+[notice ] ofAppEGLWindow: createSurface(): GL_RENDERER = VideoCore IV HW
+[notice ] ofAppEGLWindow: createSurface(): GL_VERSION  = OpenGL ES-CM 1.1
+[notice ] ofAppEGLWindow: createSurface(): GL_VENDOR   = Broadcom
+[notice ] ofAppEGLWindow: createSurface(): -------------
+[notice ] ofAppEGLWindow: setupPeripherals(): peripheral setup complete
+[notice ] ofAppEGLWindow: setupNativeUDev(): created udev object
+[notice ] ofAppEGLWindow: setupMouse(): mouse_fd= 5 devicePath=/dev/input/by-path/platform-3f980000.usb-usb-0:1.5.1:1.1-event-mouse
+[notice ] ofAppEGLWindow: setupMouse(): mouse device name = Microsoft Microsoft® Nano Transceiver v2.0
+[notice ] ofAppEGLWindow: setupKeyboard(): keyboard_fd= 6 devicePath=/dev/input/by-path/platform-3f980000.usb-usb-0:1.5.1:1.0-event-kbd
+[notice ] ofAppEGLWindow: setupKeyboard(): keyboard device name = Microsoft Microsoft® Nano Transceiver v2.0
+[notice ] ofAppEGLWindow: setupPeripherals(): native event setup complete
+[ error ] OMXPlayer::OpenFile -  
+[notice ] bool ofxOMXPlayerEngine::didReadFile(bool): didOpenMovie TOOK 0 MS
+[warning] bool ofxOMXPlayerEngine::setup(ofxOMXPlayerSettings&): FAST PATH MOVE OPEN FAILED - LIKELY A STREAM, TRYING SLOW PATH
+[ error ] OMXPlayer::OpenFile -  
+[notice ] bool ofxOMXPlayerEngine::didReadFile(bool): didOpenMovie TOOK 1 MS
+[ error ] omxReader open moviePath FAIL: 
+[ error ] bool ofxOMXPlayer::openEngine(int): engine->setup FAIL
+[notice ] bool ofxOMXPlayerEngine::didReadFile(bool): didOpenMovie TOOK 17 MS
+[notice ] bool ofxOMXPlayerEngine::openPlayer(int): duration SET: 31.557
+[notice ] bool ofxOMXPlayerEngine::openPlayer(int): Opened video PASS
+[ error ] OMX_ERRORTYPE Component::waitForEvent(OMX_EVENTTYPE, long int): OMX.broadcom.audio_render waitForEvent Event: OMX_EventPortSettingsChanged TIMED OUT at: 20
+[notice ] ofAppEGLWindow: destroyNativeKeyboard()
+[notice ] ofAppEGLWindow: destroySurface(): destroying EGL surface
+
+
+========================================== CRASHED 2 TIMES, THEN PLAYED THROUGH =================================
+pi@raspberrypi ~/openFrameworks/apps/myApps/HPlayer $ bin/HPlayer --media /media/pi/usb1/video1.mp4 --start 1
+[notice ] -HP- WOKE UP 
+[warning] ofAppEGLWindow: init(): X11 not availble on RPI yet, using a native window instead
+[notice ] ofAppEGLWindow: setupRPiNativeWindow(): screenRect: 1920x1080
+[notice ] ofAppEGLWindow: setupRPiNativeWindow(): windowRect: 1920x1080
+[notice ] ofAppEGLWindow: createSurface(): setting up EGL Display
+[notice ] ofAppEGLWindow: createSurface(): EGL Display correctly set 0x1
+[notice ] ofAppEGLWindow: createSurface(): no current renderer selected
+[notice ] ofAppEGLWindow: createSurface(): default renderer detected
+[notice ] ofAppEGLWindow: createSurface(): surface created correctly
+[notice ] ofAppEGLWindow: createSurface(): API bound correctly
+[notice ] ofAppEGLWindow: createSurface(): -----EGL-----
+[notice ] ofAppEGLWindow: createSurface(): EGL_VERSION_MAJOR = 1
+[notice ] ofAppEGLWindow: createSurface(): EGL_VERSION_MINOR = 4
+[notice ] ofAppEGLWindow: createSurface(): EGL_CLIENT_APIS = OpenGL_ES OpenVG
+[notice ] ofAppEGLWindow: createSurface(): EGL_VENDOR = Broadcom
+[notice ] ofAppEGLWindow: createSurface(): EGL_VERSION = 1.4
+[notice ] ofAppEGLWindow: createSurface(): EGL_EXTENSIONS = EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_pixmap EGL_KHR_vg_parent_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_lock_surface 
+[notice ] ofAppEGLWindow: createSurface(): GL_RENDERER = VideoCore IV HW
+[notice ] ofAppEGLWindow: createSurface(): GL_VERSION  = OpenGL ES-CM 1.1
+[notice ] ofAppEGLWindow: createSurface(): GL_VENDOR   = Broadcom
+[notice ] ofAppEGLWindow: createSurface(): -------------
+[notice ] ofAppEGLWindow: setupPeripherals(): peripheral setup complete
+[notice ] ofAppEGLWindow: setupNativeUDev(): created udev object
+[notice ] ofAppEGLWindow: setupMouse(): mouse_fd= 5 devicePath=/dev/input/by-path/platform-3f980000.usb-usb-0:1.5.1:1.1-event-mouse
+[notice ] ofAppEGLWindow: setupMouse(): mouse device name = Microsoft Microsoft® Nano Transceiver v2.0
+[notice ] ofAppEGLWindow: setupKeyboard(): keyboard_fd= 6 devicePath=/dev/input/by-path/platform-3f980000.usb-usb-0:1.5.1:1.0-event-kbd
+[notice ] ofAppEGLWindow: setupKeyboard(): keyboard device name = Microsoft Microsoft® Nano Transceiver v2.0
+[notice ] ofAppEGLWindow: setupPeripherals(): native event setup complete
+[ error ] OMXPlayer::OpenFile -  
+[notice ] bool ofxOMXPlayerEngine::didReadFile(bool): didOpenMovie TOOK 0 MS
+[warning] bool ofxOMXPlayerEngine::setup(ofxOMXPlayerSettings&): FAST PATH MOVE OPEN FAILED - LIKELY A STREAM, TRYING SLOW PATH
+[ error ] OMXPlayer::OpenFile -  
+[notice ] bool ofxOMXPlayerEngine::didReadFile(bool): didOpenMovie TOOK 0 MS
+[ error ] omxReader open moviePath FAIL: 
+[ error ] bool ofxOMXPlayer::openEngine(int): engine->setup FAIL
+[notice ] bool ofxOMXPlayerEngine::didReadFile(bool): didOpenMovie TOOK 6 MS
+[notice ] bool ofxOMXPlayerEngine::openPlayer(int): duration SET: 31.1499
+[notice ] bool ofxOMXPlayerEngine::openPlayer(int): Opened video PASS
+[ error ] OMX_ERRORTYPE Component::waitForEvent(OMX_EVENTTYPE, long int): OMX.broadcom.audio_render waitForEvent Event: OMX_EventPortSettingsChanged TIMED OUT at: 20
+[ error ] Component::~Component(): 80 OMX_ErrorBadParameter
+[ error ] OMX_ERRORTYPE Component::waitForCommand(OMX_COMMANDTYPE, OMX_U32, long int): OMX.broadcom.audio_render TIMEOUT
+OMX_EventCmdComplete
+OMX_CommandStateSet
+2
+
+[ error ] OMX_ERRORTYPE Component::setState(OMX_STATETYPE): 864 
+[notice ] bool ofxOMXPlayerEngine::didReadFile(bool): didOpenMovie TOOK 9 MS
+[notice ] bool ofxOMXPlayerEngine::openPlayer(int): duration SET: 31.1499
+[notice ] bool ofxOMXPlayerEngine::openPlayer(int): Opened video PASS
+[ error ] OMX_ERRORTYPE Component::waitForEvent(OMX_EVENTTYPE, long int): OMX.broadcom.audio_render waitForEvent Event: OMX_EventPortSettingsChanged TIMED OUT at: 20
+[ error ] Component::~Component(): 80 OMX_ErrorBadParameter
+[ error ] OMX_ERRORTYPE Component::waitForCommand(OMX_COMMANDTYPE, OMX_U32, long int): OMX.broadcom.audio_render TIMEOUT
+OMX_EventCmdComplete
+OMX_CommandStateSet
+2
+
+[ error ] OMX_ERRORTYPE Component::setState(OMX_STATETYPE): 864 
+[notice ] bool ofxOMXPlayerEngine::didReadFile(bool): didOpenMovie TOOK 10 MS
+[notice ] bool ofxOMXPlayerEngine::openPlayer(int): duration SET: 31.1499
+[notice ] bool ofxOMXPlayerEngine::openPlayer(int): Opened video PASS
+[ error ] OMX_ERRORTYPE Component::waitForEvent(OMX_EVENTTYPE, long int): OMX.broadcom.audio_render waitForEvent Event: OMX_EventPortSettingsChanged TIMED OUT at: 20
+[notice ] ofAppEGLWindow: destroyNativeKeyboard()
+[notice ] ofAppEGLWindow: destroySurface(): destroying EGL surface
+
