@@ -263,7 +263,7 @@ void mediaPlayer::play(int index)
             image->stop();
 	    string videoPath = file.path();
 	    string audioFilePath = "/media/pi/usb1/audio/audio" + videoPath.substr(videoPath.length()-5, 1) + ".wav";
-	    //sound->play(audioFilePath); 
+	    sound->play(audioFilePath); 
             video->play(videoPath);
         }
         //SOUND

@@ -120,3 +120,113 @@ OMX_CommandStateSet
 [notice ] ofAppEGLWindow: destroySurface(): destroying EGL surface
 [notice ] ofAppEGLWindow: display(): eglSwapBuffers failed: invalid display specified
 
+
+
+
+
+
+================================================================================================
+NO CRASH
+pi@raspberrypi:~/openFrameworks/apps/myApps/vbHPlayer $ bin/vbHPlayer --media /media/pi/usb1/bunny.mp4 
+[notice ] -HP- WOKE UP 
+[warning] ofAppEGLWindow: init(): X11 not availble on RPI yet, using a native window instead
+[notice ] ofAppEGLWindow: setupRPiNativeWindow(): screenRect: 1920x1080
+[notice ] ofAppEGLWindow: setupRPiNativeWindow(): windowRect: 1920x1080
+[notice ] ofAppEGLWindow: createSurface(): setting up EGL Display
+[notice ] ofAppEGLWindow: createSurface(): EGL Display correctly set 0x1
+[notice ] ofAppEGLWindow: createSurface(): no current renderer selected
+[notice ] ofAppEGLWindow: createSurface(): default renderer detected
+[notice ] ofAppEGLWindow: createSurface(): surface created correctly
+[notice ] ofAppEGLWindow: createSurface(): API bound correctly
+[notice ] ofAppEGLWindow: createSurface(): -----EGL-----
+[notice ] ofAppEGLWindow: createSurface(): EGL_VERSION_MAJOR = 1
+[notice ] ofAppEGLWindow: createSurface(): EGL_VERSION_MINOR = 4
+[notice ] ofAppEGLWindow: createSurface(): EGL_CLIENT_APIS = OpenGL_ES OpenVG
+[notice ] ofAppEGLWindow: createSurface(): EGL_VENDOR = Broadcom
+[notice ] ofAppEGLWindow: createSurface(): EGL_VERSION = 1.4
+[notice ] ofAppEGLWindow: createSurface(): EGL_EXTENSIONS = EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_pixmap EGL_KHR_vg_parent_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_lock_surface 
+[notice ] ofAppEGLWindow: createSurface(): GL_RENDERER = VideoCore IV HW
+[notice ] ofAppEGLWindow: createSurface(): GL_VERSION  = OpenGL ES-CM 1.1
+[notice ] ofAppEGLWindow: createSurface(): GL_VENDOR   = Broadcom
+[notice ] ofAppEGLWindow: createSurface(): -------------
+[notice ] ofAppEGLWindow: setupPeripherals(): peripheral setup complete
+[notice ] ofAppEGLWindow: setupNativeUDev(): created udev object
+[notice ] ofAppEGLWindow: setupMouse(): unabled to find mouse
+[ error ] ofAppEGLWindow: setupMouse(): did not open mouse
+[ error ] ofAppEGLWindow: setupMouse(): did not open mouse, mouse_fd < 0
+[warning] ofAppEGLWindow: setupKeyboard(): unabled to find keyboard
+[ error ] ofAppEGLWindow: setupKeyboard(): did not open keyboard
+[ error ] ofAppEGLWindow: setupKeyboard(): did not open keyboard, keyboard_fd < 0
+[notice ] ofAppEGLWindow: setupPeripherals(): native event setup complete
+[ error ] OMXPlayer::OpenFile -  
+[notice ] bool ofxOMXPlayerEngine::didReadFile(bool): didOpenMovie TOOK 0 MS
+[warning] bool ofxOMXPlayerEngine::setup(ofxOMXPlayerSettings&): FAST PATH MOVE OPEN FAILED - LIKELY A STREAM, TRYING SLOW PATH
+[ error ] OMXPlayer::OpenFile -  
+[notice ] bool ofxOMXPlayerEngine::didReadFile(bool): didOpenMovie TOOK 0 MS
+[ error ] omxReader open moviePath FAIL: 
+[ error ] bool ofxOMXPlayer::openEngine(int): engine->setup FAIL
+[notice ] bool ofxOMXPlayerEngine::didReadFile(bool): didOpenMovie TOOK 34 MS
+[notice ] bool ofxOMXPlayerEngine::openPlayer(int): duration SET: 596.458
+[notice ] bool ofxOMXPlayerEngine::openPlayer(int): Opened video PASS
+^[q^C[ error ] Component::~Component(): 80 OMX_ErrorBadParameter
+[notice ] ofAppEGLWindow: destroyNativeKeyboard()
+[notice ] ofAppEGLWindow: destroyNativeKeyboard(): unable to reset terminal
+[notice ] ofAppEGLWindow: destroySurface(): destroying EGL surface
+[notice ] ofAppEGLWindow: display(): eglSwapBuffers failed: invalid display specified
+
+
+CRASH
+pi@raspberrypi:~/openFrameworks/apps/myApps/vbHPlayer $ bin/vbHPlayer --media /media/pi/usb1/video1.mp4 
+[notice ] -HP- WOKE UP 
+[warning] ofAppEGLWindow: init(): X11 not availble on RPI yet, using a native window instead
+[notice ] ofAppEGLWindow: setupRPiNativeWindow(): screenRect: 1920x1080
+[notice ] ofAppEGLWindow: setupRPiNativeWindow(): windowRect: 1920x1080
+[notice ] ofAppEGLWindow: createSurface(): setting up EGL Display
+[notice ] ofAppEGLWindow: createSurface(): EGL Display correctly set 0x1
+[notice ] ofAppEGLWindow: createSurface(): no current renderer selected
+[notice ] ofAppEGLWindow: createSurface(): default renderer detected
+[notice ] ofAppEGLWindow: createSurface(): surface created correctly
+[notice ] ofAppEGLWindow: createSurface(): API bound correctly
+[notice ] ofAppEGLWindow: createSurface(): -----EGL-----
+[notice ] ofAppEGLWindow: createSurface(): EGL_VERSION_MAJOR = 1
+[notice ] ofAppEGLWindow: createSurface(): EGL_VERSION_MINOR = 4
+[notice ] ofAppEGLWindow: createSurface(): EGL_CLIENT_APIS = OpenGL_ES OpenVG
+[notice ] ofAppEGLWindow: createSurface(): EGL_VENDOR = Broadcom
+[notice ] ofAppEGLWindow: createSurface(): EGL_VERSION = 1.4
+[notice ] ofAppEGLWindow: createSurface(): EGL_EXTENSIONS = EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_pixmap EGL_KHR_vg_parent_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_lock_surface 
+[notice ] ofAppEGLWindow: createSurface(): GL_RENDERER = VideoCore IV HW
+[notice ] ofAppEGLWindow: createSurface(): GL_VERSION  = OpenGL ES-CM 1.1
+[notice ] ofAppEGLWindow: createSurface(): GL_VENDOR   = Broadcom
+[notice ] ofAppEGLWindow: createSurface(): -------------
+[notice ] ofAppEGLWindow: setupPeripherals(): peripheral setup complete
+[notice ] ofAppEGLWindow: setupNativeUDev(): created udev object
+[notice ] ofAppEGLWindow: setupMouse(): unabled to find mouse
+[ error ] ofAppEGLWindow: setupMouse(): did not open mouse
+[ error ] ofAppEGLWindow: setupMouse(): did not open mouse, mouse_fd < 0
+[warning] ofAppEGLWindow: setupKeyboard(): unabled to find keyboard
+[ error ] ofAppEGLWindow: setupKeyboard(): did not open keyboard
+[ error ] ofAppEGLWindow: setupKeyboard(): did not open keyboard, keyboard_fd < 0
+[notice ] ofAppEGLWindow: setupPeripherals(): native event setup complete
+[ error ] OMXPlayer::OpenFile -  
+[notice ] bool ofxOMXPlayerEngine::didReadFile(bool): didOpenMovie TOOK 0 MS
+[warning] bool ofxOMXPlayerEngine::setup(ofxOMXPlayerSettings&): FAST PATH MOVE OPEN FAILED - LIKELY A STREAM, TRYING SLOW PATH
+[ error ] OMXPlayer::OpenFile -  
+[notice ] bool ofxOMXPlayerEngine::didReadFile(bool): didOpenMovie TOOK 1 MS
+[ error ] omxReader open moviePath FAIL: 
+[ error ] bool ofxOMXPlayer::openEngine(int): engine->setup FAIL
+[notice ] bool ofxOMXPlayerEngine::didReadFile(bool): didOpenMovie TOOK 8 MS
+[notice ] bool ofxOMXPlayerEngine::openPlayer(int): duration SET: 31.1499
+[notice ] bool ofxOMXPlayerEngine::openPlayer(int): Opened video PASS
+-------------- FAULTY LINE ---------------
+[ error ] Component::~Component(): 80 OMX_ErrorBadParameter
+[notice ] bool ofxOMXPlayerEngine::didReadFile(bool): didOpenMovie TOOK 7 MS
+[notice ] bool ofxOMXPlayerEngine::openPlayer(int): duration SET: 31.1499
+[notice ] bool ofxOMXPlayerEngine::openPlayer(int): Opened video PASS
+
+^C[ error ] Component::~Component(): 80 OMX_ErrorBadParameter
+[notice ] ofAppEGLWindow: destroyNativeKeyboard()
+[notice ] ofAppEGLWindow: destroyNativeKeyboard(): unable to reset terminal
+[notice ] ofAppEGLWindow: destroySurface(): destroying EGL surface
+[notice ] ofAppEGLWindow: display(): eglSwapBuffers failed: invalid display specified
+
+

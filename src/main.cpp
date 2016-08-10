@@ -9,8 +9,8 @@ int main(int argc, const char** argv)
 	//ARGS
 	ofxArgParser::init(argc, argv);
 	
-	ofSetLogLevel(OF_LOG_NOTICE);
-	//ofSetLogLevel(OF_LOG_WARNING);
+	//ofSetLogLevel(OF_LOG_NOTICE);
+	ofSetLogLevel(OF_LOG_WARNING);
 
 	ofLog(OF_LOG_NOTICE,"-HP- WOKE UP ");
 
