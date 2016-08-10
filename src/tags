@@ -1,0 +1,190 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+HPlayer	HPlayer.h	/^class HPlayer : public ofBaseApp$/;"	c
+_settings	omPlayer.h	/^		ofxOMXPlayerSettings 	_settings;$/;"	m	class:omPlayer
+ahdmi	mediaPlayer.h	/^        bool    ahdmi; \/*!< use HDMI for audio output *\/$/;"	m	class:mediaPlayer
+applyVolume	omPlayer.cpp	/^void omPlayer::applyVolume()$/;"	f	class:omPlayer
+applyVolume	sndPlayer.cpp	/^void sndPlayer::applyVolume()$/;"	f	class:sndPlayer
+base64	oscCom.h	/^		bool 	base64; \/*!< indicate (need for) base64 encoding of data *\/$/;"	m	class:oscCom
+basePath	mediaPlayer.h	/^        string  basePath; \/*!< base directory to load files from *\/$/;"	m	class:mediaPlayer
+basepath	mediaPlayer.cpp	/^void mediaPlayer::basepath(string path)$/;"	f	class:mediaPlayer
+blur	imgPlayer.cpp	/^void imgPlayer::blur()$/;"	f	class:imgPlayer
+blur	imgPlayer.h	/^    int     blur; \/*!< indicate amount of blur *\/$/;"	m	struct:paramsIMG_t
+blur	mediaPlayer.h	/^        int     blur; \/*!< amount of blurring (effect) in video *\/$/;"	m	class:mediaPlayer
+blur	omPlayer.cpp	/^void omPlayer::blur()$/;"	f	class:omPlayer
+blur	omPlayer.h	/^    int     blur;   \/*!< indicate amount of blur *\/$/;"	m	struct:params_t
+blurH	imgPlayer.h	/^        ofShader blurH; \/*!< shader for horizontal blurring *\/$/;"	m	class:imgPlayer
+blurH	omPlayer.h	/^		ofShader blurH;  \/*!< shader for horizontal blurring *\/$/;"	m	class:omPlayer
+blurV	imgPlayer.h	/^        ofShader  blurV; \/*!< shader for vertical blurring *\/$/;"	m	class:imgPlayer
+blurV	omPlayer.h	/^        	ofShader blurV;  \/*!< shader for vertical blurring *\/$/;"	m	class:omPlayer
+clearscreen	imgPlayer.cpp	/^void imgPlayer::clearscreen()$/;"	f	class:imgPlayer
+clearscreen	omPlayer.cpp	/^void omPlayer::clearscreen()$/;"	f	class:omPlayer
+cmd	oscCom.cpp	/^string oscCom::cmd(string command)$/;"	f	class:oscCom
+cmdmap	oscCom.h	/^		string 	cmdmap; \/*!< mapping of command strings to OSC *\/$/;"	m	class:oscCom
+commander	oscCom.h	/^		ofxXmlSettings commander;	\/*!< main configuration *\/		$/;"	m	class:oscCom
+confFile	xmlSettings.h	/^        string confFile; \/*!< filename\/path of XML file to work on*\/$/;"	m	class:xmlSettings
+conf_bool	xmlSettings.cpp	/^bool xmlSettings::conf_bool(string node,string leaf,bool def)$/;"	f	class:xmlSettings
+conf_int	xmlSettings.cpp	/^int xmlSettings::conf_int(string node,string leaf,int def)$/;"	f	class:xmlSettings
+conf_str	xmlSettings.cpp	/^string xmlSettings::conf_str(string node,string leaf,const string &def)$/;"	f	class:xmlSettings
+connect	oscCom.cpp	/^void oscCom::connect()$/;"	f	class:oscCom
+connected	oscCom.h	/^		bool 	connected;	\/*!< indicate active OSC network setup (sender & reciver) *\/$/;"	m	class:oscCom
+currentIndex	mediaPlayer.h	/^        int             currentIndex; \/*!< current index (in playlist) being played *\/$/;"	m	class:mediaPlayer
+dim	imgPlayer.h	/^        dimsIMG_t          dim; \/*!< screen\/display dimensions *\/$/;"	m	class:imgPlayer
+dim	omPlayer.h	/^		dims_t			dim; \/*!< screen dimensions *\/$/;"	m	class:omPlayer
+dimsIMG_t	imgPlayer.h	/^struct dimsIMG_t {$/;"	s
+dims_t	omPlayer.h	/^struct dims_t {$/;"	s
+displayInfo	mediaPlayer.cpp	/^void mediaPlayer::displayInfo() {$/;"	f	class:mediaPlayer
+displayStandby	mediaPlayer.cpp	/^void mediaPlayer::displayStandby() {$/;"	f	class:mediaPlayer
+draw	HPlayer.cpp	/^void HPlayer::draw()$/;"	f	class:HPlayer
+draw	mediaPlayer.cpp	/^void mediaPlayer::draw()$/;"	f	class:mediaPlayer
+end	oscCom.cpp	/^void oscCom::end(string file) $/;"	f	class:oscCom
+eventString	HPlayer.h	/^		char eventString[255]; \/*!< event (description) going on *\/$/;"	m	class:HPlayer
+execute	oscCom.cpp	/^void oscCom::execute(mediaPlayer* player)$/;"	f	class:oscCom
+frameblur	imgPlayer.h	/^        ofFbo  frameblur; \/*!< framebuffer for blurring *\/$/;"	m	class:imgPlayer
+frameblur	omPlayer.h	/^        	ofFbo frameblur; \/*!< framebuffer for blurring *\/$/;"	m	class:omPlayer
+framebuffer	imgPlayer.h	/^        ofFbo framebuffer; \/*!< basic framebuffer *\/$/;"	m	class:imgPlayer
+framebuffer	omPlayer.h	/^		ofFbo framebuffer; \/*!< plain frambuffer *\/$/;"	m	class:omPlayer
+freeze	omPlayer.h	/^    		int freeze; \/*!< counter for frozen frames (?) \\todo reality check *\/$/;"	m	class:omPlayer
+freeze	sndPlayer.h	/^        int freeze; \/*!< number of frozen frames \\todo reality check *\/$/;"	m	class:sndPlayer
+getCurrentFrameNbr	omPlayer.cpp	/^int omPlayer::getCurrentFrameNbr(){$/;"	f	class:omPlayer
+getDurationMs	mediaPlayer.cpp	/^int mediaPlayer::getDurationMs()$/;"	f	class:mediaPlayer
+getDurationMs	omPlayer.cpp	/^int omPlayer::getDurationMs(){$/;"	f	class:omPlayer
+getDurationMs	sndPlayer.cpp	/^int sndPlayer::getDurationMs(){$/;"	f	class:sndPlayer
+getIP	oscCom.cpp	/^char* oscCom::getIP()$/;"	f	class:oscCom
+getPositionMs	mediaPlayer.cpp	/^int mediaPlayer::getPositionMs()$/;"	f	class:mediaPlayer
+getPositionMs	omPlayer.cpp	/^int omPlayer::getPositionMs(){$/;"	f	class:omPlayer
+getPositionMs	sndPlayer.cpp	/^int sndPlayer::getPositionMs(){$/;"	f	class:sndPlayer
+height	imgPlayer.h	/^    int height; \/*!< height of the display (screen) *\/$/;"	m	struct:dimsIMG_t
+height	omPlayer.h	/^    int height; \/*!< height of the display (screen) *\/$/;"	m	struct:dims_t
+hostOUT	oscCom.h	/^		string 	hostOUT; \/*!< remote IP to send data to *\/$/;"	m	class:oscCom
+iceBreak	omPlayer.cpp	/^void omPlayer::iceBreak()$/;"	f	class:omPlayer
+iceBreak	sndPlayer.cpp	/^void sndPlayer::iceBreak()$/;"	f	class:sndPlayer
+image	mediaPlayer.h	/^        imgPlayer* image; \/*!< handle image content *\/$/;"	m	class:mediaPlayer
+imgPlayer	imgPlayer.cpp	/^imgPlayer::imgPlayer() {$/;"	f	class:imgPlayer
+imgPlayer	imgPlayer.h	/^class imgPlayer $/;"	c
+info	mediaPlayer.h	/^        bool    info; \/*!< control display of (meta) information *\/$/;"	m	class:mediaPlayer
+init	imgPlayer.cpp	/^void imgPlayer::init(bool textured)$/;"	f	class:imgPlayer
+init	mediaPlayer.cpp	/^void mediaPlayer::init()$/;"	f	class:mediaPlayer
+init	omPlayer.cpp	/^void omPlayer::init(bool textured, bool audioHDMI)$/;"	f	class:omPlayer
+ipKXKM	oscCom.cpp	/^void oscCom::ipKXKM(mediaPlayer* player) $/;"	f	class:oscCom
+isPaused	mediaPlayer.cpp	/^bool mediaPlayer::isPaused()$/;"	f	class:mediaPlayer
+isPaused	sndPlayer.cpp	/^bool sndPlayer::isPaused()$/;"	f	class:sndPlayer
+isPlaying	imgPlayer.cpp	/^bool imgPlayer::isPlaying()$/;"	f	class:imgPlayer
+isPlaying	mediaPlayer.cpp	/^bool mediaPlayer::isPlaying()$/;"	f	class:mediaPlayer
+isPlaying	sndPlayer.cpp	/^bool sndPlayer::isPlaying()$/;"	f	class:sndPlayer
+keyPressed	HPlayer.cpp	/^void HPlayer::keyPressed(int key){ $/;"	f	class:HPlayer
+lastFrame	omPlayer.h	/^		int lastFrame; \/*!< last frame displayed *\/$/;"	m	class:omPlayer
+lastPos	sndPlayer.h	/^        float lastPos;  \/*!< last known position in file to be played *\/$/;"	m	class:sndPlayer
+listener	omPlayer.h	/^    		omListener*	listener; \/*!< event listener *\/$/;"	m	class:omPlayer
+listener	sndPlayer.h	/^        sndListener* listener; \/*!< sound event listener *\/$/;"	m	class:sndPlayer
+load	mediaPlayer.cpp	/^void mediaPlayer::load()$/;"	f	class:mediaPlayer
+load	mediaPlayer.cpp	/^void mediaPlayer::load(vector<string> playlist)$/;"	f	class:mediaPlayer
+log	oscCom.cpp	/^string oscCom::log() {$/;"	f	class:oscCom
+loop	mediaPlayer.h	/^        bool    loop;  \/*!< loop the current playback *\/$/;"	m	class:mediaPlayer
+main	main.cpp	/^int main(int argc, const char** argv)$/;"	f
+makeRect	imgPlayer.cpp	/^void imgPlayer::makeRect()$/;"	f	class:imgPlayer
+makeRect	omPlayer.cpp	/^void omPlayer::makeRect()$/;"	f	class:omPlayer
+marginX	imgPlayer.h	/^    int marginX; \/*!< horizontal display margin *\/$/;"	m	struct:dimsIMG_t
+marginX	omPlayer.h	/^	int marginX; \/*!< horizontal display margin *\/$/;"	m	struct:dims_t
+marginY	imgPlayer.h	/^    int marginY; \/*!< vertical display margin *\/$/;"	m	struct:dimsIMG_t
+marginY	omPlayer.h	/^	int marginY; \/*!< vertical display margin *\/$/;"	m	struct:dims_t
+media	mediaPlayer.cpp	/^string mediaPlayer::media()$/;"	f	class:mediaPlayer
+mediaFiles	mediaPlayer.h	/^        vector<ofFile>  mediaFiles; \/*!< files to play *\/$/;"	m	class:mediaPlayer
+mediaPlayer	mediaPlayer.cpp	/^mediaPlayer::mediaPlayer()$/;"	f	class:mediaPlayer
+mediaPlayer	mediaPlayer.h	/^class mediaPlayer : public omListener, public sndListener $/;"	c
+mute	mediaPlayer.h	/^        bool    mute; \/*!< indicate mute state *\/$/;"	m	class:mediaPlayer
+mute	omPlayer.h	/^    bool    mute;   \/*!< indicate that playback is muted *\/$/;"	m	struct:params_t
+mute	sndPlayer.h	/^    bool    mute;   \/*!< store if sound is currently muted *\/$/;"	m	struct:paramsSND_t
+name	mediaPlayer.h	/^        string  name; \/*!< name of release \\todo reality check *\/$/;"	m	class:mediaPlayer
+next	mediaPlayer.cpp	/^void mediaPlayer::next()$/;"	f	class:mediaPlayer
+nextIndex	mediaPlayer.h	/^        int             nextIndex; \/*!< next index (in playlist) to play *\/$/;"	m	class:mediaPlayer
+omListener	omPlayer.h	/^class omListener$/;"	c
+omPlayer	omPlayer.cpp	/^omPlayer::omPlayer():ofxOMXPlayer()$/;"	f	class:omPlayer
+omPlayer	omPlayer.h	/^class omPlayer : public ofxOMXPlayer $/;"	c
+onSoundEnd	mediaPlayer.cpp	/^void mediaPlayer::onSoundEnd()$/;"	f	class:mediaPlayer
+onSoundFreeze	mediaPlayer.cpp	/^void mediaPlayer::onSoundFreeze()$/;"	f	class:mediaPlayer
+onVideoEnd	mediaPlayer.cpp	/^void mediaPlayer::onVideoEnd()$/;"	f	class:mediaPlayer
+onVideoFreeze	mediaPlayer.cpp	/^void mediaPlayer::onVideoFreeze()$/;"	f	class:mediaPlayer
+osc	HPlayer.h	/^		oscCom	osc; \/*!< OSC communication class *\/$/;"	m	class:HPlayer
+oscCom	oscCom.cpp	/^oscCom::oscCom()$/;"	f	class:oscCom
+oscCom	oscCom.h	/^class oscCom$/;"	c
+oscDebug	oscCom.h	/^		string 			oscDebug;	\/*!< OSC debug messages *\/$/;"	m	class:oscCom
+oscListener	oscCom.h	/^		ofxOscReceiver  oscListener; \/*!< receiver of OSC info [details](http:\/\/openframeworks.cc\/documentation\/ofxOsc\/ofxOscReceiver.html) *\/$/;"	m	class:oscCom
+oscSender	oscCom.h	/^		ofxOscSender 	oscSender;	\/*!< sender of OSC info [details](http:\/\/openframeworks.cc\/documentation\/ofxOsc\/ofxOscSender.html) *\/$/;"	m	class:oscCom
+oscToString	oscCom.cpp	/^string oscCom::oscToString(ofxOscMessage m) {$/;"	f	class:oscCom
+params	imgPlayer.h	/^        paramsIMG_t        params; \/*!< parameters for displaying images *\/$/;"	m	class:imgPlayer
+params	omPlayer.h	/^		params_t		params;	\/*!< playback parameters *\/$/;"	m	class:omPlayer
+params	sndPlayer.h	/^        paramsSND_t        params;  \/*!< volume\/mute for sound *\/$/;"	m	class:sndPlayer
+paramsIMG_t	imgPlayer.h	/^struct paramsIMG_t {$/;"	s
+paramsSND_t	sndPlayer.h	/^struct paramsSND_t {$/;"	s
+params_t	omPlayer.h	/^struct params_t {$/;"	s
+pause	mediaPlayer.cpp	/^void mediaPlayer::pause(){$/;"	f	class:mediaPlayer
+pause	omPlayer.cpp	/^void omPlayer::pause(){$/;"	f	class:omPlayer
+pause	sndPlayer.cpp	/^void sndPlayer::pause(){$/;"	f	class:sndPlayer
+play	imgPlayer.cpp	/^void imgPlayer::play(string file)$/;"	f	class:imgPlayer
+play	mediaPlayer.cpp	/^void mediaPlayer::play(){$/;"	f	class:mediaPlayer
+play	mediaPlayer.cpp	/^void mediaPlayer::play(int index)$/;"	f	class:mediaPlayer
+play	mediaPlayer.cpp	/^void mediaPlayer::play(string file)$/;"	f	class:mediaPlayer
+play	mediaPlayer.cpp	/^void mediaPlayer::play(vector<string> playlist)$/;"	f	class:mediaPlayer
+play	omPlayer.cpp	/^void omPlayer::play(string file){$/;"	f	class:omPlayer
+play	sndPlayer.cpp	/^void sndPlayer::play(string file)$/;"	f	class:sndPlayer
+player	HPlayer.h	/^		mediaPlayer player; \/*!< container to manage content *\/$/;"	m	class:HPlayer
+player	imgPlayer.h	/^        ofImage* player; \/*!< container class for image (present during playback) *\/$/;"	m	class:imgPlayer
+player	sndPlayer.h	/^        ofOpenALSoundPlayer* player; \/*!< sound player to control \\todo reality check *\/$/;"	m	class:sndPlayer
+playlistSize	mediaPlayer.cpp	/^int mediaPlayer::playlistSize(){$/;"	f	class:mediaPlayer
+portIN	oscCom.h	/^		int 	portIN; \/*!< local port to listen for incoming data *\/$/;"	m	class:oscCom
+portOUT	oscCom.h	/^		int 	portOUT; \/*!< remote port to send data to *\/$/;"	m	class:oscCom
+prefix	oscCom.h	/^		string  prefix; \/*!< (internal) prefix for OSC messages *\/$/;"	m	class:oscCom
+prev	mediaPlayer.cpp	/^void mediaPlayer::prev()$/;"	f	class:mediaPlayer
+random	mediaPlayer.h	/^        bool    random; \/*!< indicate random playback of playlist *\/$/;"	m	class:mediaPlayer
+resume	mediaPlayer.cpp	/^void mediaPlayer::resume(){$/;"	f	class:mediaPlayer
+resume	omPlayer.cpp	/^void omPlayer::resume(){$/;"	f	class:omPlayer
+resume	sndPlayer.cpp	/^void sndPlayer::resume(){$/;"	f	class:sndPlayer
+run	sndPlayer.cpp	/^void sndPlayer::run()$/;"	f	class:sndPlayer
+seek	mediaPlayer.cpp	/^void mediaPlayer::seek(int timemilli){$/;"	f	class:mediaPlayer
+seek	omPlayer.cpp	/^void omPlayer::seek(int timemilli){$/;"	f	class:omPlayer
+seek	sndPlayer.cpp	/^void sndPlayer::seek(int timemilli)$/;"	f	class:sndPlayer
+setBlur	imgPlayer.cpp	/^void imgPlayer::setBlur(int blur)$/;"	f	class:imgPlayer
+setBlur	omPlayer.cpp	/^void omPlayer::setBlur(int blur)$/;"	f	class:omPlayer
+setListener	omPlayer.cpp	/^void omPlayer::setListener(omListener* myListener)$/;"	f	class:omPlayer
+setListener	sndPlayer.cpp	/^void sndPlayer::setListener(sndListener* myListener)$/;"	f	class:sndPlayer
+setMuted	omPlayer.cpp	/^void omPlayer::setMuted(bool mute){$/;"	f	class:omPlayer
+setMuted	sndPlayer.cpp	/^void sndPlayer::setMuted(bool mute){$/;"	f	class:sndPlayer
+setZoom	imgPlayer.cpp	/^void imgPlayer::setZoom(int zoom)$/;"	f	class:imgPlayer
+setZoom	omPlayer.cpp	/^void omPlayer::setZoom(int zoom)$/;"	f	class:omPlayer
+setup	HPlayer.cpp	/^void HPlayer::setup()$/;"	f	class:HPlayer
+show	imgPlayer.cpp	/^void imgPlayer::show()$/;"	f	class:imgPlayer
+show	omPlayer.cpp	/^void omPlayer::show()$/;"	f	class:omPlayer
+sndListener	sndPlayer.h	/^class sndListener$/;"	c
+sndPlayer	sndPlayer.cpp	/^sndPlayer::sndPlayer() {$/;"	f	class:sndPlayer
+sndPlayer	sndPlayer.h	/^class sndPlayer $/;"	c
+sound	mediaPlayer.h	/^        sndPlayer* sound; \/*!< handle audion content *\/$/;"	m	class:mediaPlayer
+status	oscCom.cpp	/^void oscCom::status(mediaPlayer *player)$/;"	f	class:oscCom
+status	oscCom.cpp	/^void oscCom::status(mediaPlayer* player, string response_prefix)$/;"	f	class:oscCom
+statusKXKM	oscCom.cpp	/^void oscCom::statusKXKM(mediaPlayer* player)$/;"	f	class:oscCom
+stop	imgPlayer.cpp	/^void imgPlayer::stop()$/;"	f	class:imgPlayer
+stop	mediaPlayer.cpp	/^void mediaPlayer::stop()$/;"	f	class:mediaPlayer
+stop	omPlayer.cpp	/^void omPlayer::stop()$/;"	f	class:omPlayer
+stop	sndPlayer.cpp	/^void sndPlayer::stop()$/;"	f	class:sndPlayer
+textured	imgPlayer.h	/^    bool textured; \/*!< indicate use of effects *\/$/;"	m	struct:paramsIMG_t
+textured	mediaPlayer.h	/^        bool    textured; \/*!< indicate the application of video effects *\/$/;"	m	class:mediaPlayer
+timeToFrameMs	omPlayer.cpp	/^int omPlayer::timeToFrameMs(int timemilli){$/;"	f	class:omPlayer
+update	HPlayer.cpp	/^void HPlayer::update()$/;"	f	class:HPlayer
+update	mediaPlayer.cpp	/^void mediaPlayer::update()$/;"	f	class:mediaPlayer
+video	mediaPlayer.h	/^        omPlayer* video; \/*!< handle video content *\/$/;"	m	class:mediaPlayer
+volume	mediaPlayer.h	/^        int     volume; \/*!< volume level *\/$/;"	m	class:mediaPlayer
+volume	omPlayer.cpp	/^void omPlayer::volume(int v){$/;"	f	class:omPlayer
+volume	omPlayer.h	/^    int     volume; \/*!< playback volume *\/$/;"	m	struct:params_t
+volume	sndPlayer.cpp	/^void sndPlayer::volume(int v){$/;"	f	class:sndPlayer
+volume	sndPlayer.h	/^    int     volume; \/*!< volume of the sound *\/$/;"	m	struct:paramsSND_t
+width	imgPlayer.h	/^    int width; \/*!< width of the display (screen) *\/$/;"	m	struct:dimsIMG_t
+width	omPlayer.h	/^	int width; \/*!< width of the display (screen) *\/$/;"	m	struct:dims_t
+xmlSettings	xmlSettings.cpp	/^xmlSettings::xmlSettings(string file)$/;"	f	class:xmlSettings
+xmlSettings	xmlSettings.h	/^class xmlSettings : public ofxXmlSettings$/;"	c
+zoom	imgPlayer.h	/^    int     zoom; \/*!< level of zoom (in percent) *\/$/;"	m	struct:paramsIMG_t
+zoom	mediaPlayer.h	/^        int     zoom; \/*!< zoom factor in percent *\/$/;"	m	class:mediaPlayer
+zoom	omPlayer.h	/^    int     zoom;   \/*!< inidcate zoom level in percent *\/$/;"	m	struct:params_t
