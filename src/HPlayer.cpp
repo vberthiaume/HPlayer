@@ -13,34 +13,34 @@ void HPlayer::setup()
 	//HPLAYER SETTINGS
 	xmlSettings settings("settings.xml");
 
-	player.name = settings.conf_str("system","playerName","HPlayer");	
-	player.info = settings.conf_bool("system","enableInfo",false);
+	player.name     = settings.conf_str("system","playerName","HPlayer");	
+	player.info     = settings.conf_bool("system","enableInfo",false);
 
-	player.volume = settings.conf_int("player","volume",50);
-	player.ahdmi = settings.conf_bool("player","audioHdmi",false);
+	player.volume   = settings.conf_int("player","volume",50);
+	player.ahdmi    = settings.conf_bool("player","audioHdmi",false);
 	player.textured = settings.conf_bool("player","textured",false);
-	player.zoom = settings.conf_int("player","zoom",100);
-	player.blur = settings.conf_int("player","blur",0);
+	player.zoom     = settings.conf_int("player","zoom",100);
+	player.blur     = settings.conf_int("player","blur",0);
 
 	player.basepath( settings.conf_str("media","path","/home/pi/media") );
-	player.loop = settings.conf_bool("media","loop",true);
-	player.random = settings.conf_bool("media","random",false);
+	player.loop     = settings.conf_bool("media","loop",true);
+	player.random   = settings.conf_bool("media","random",false);
 
 	osc.portIN 	= settings.conf_int("osc","portIn",9000);
-	osc.portOUT = settings.conf_int("osc","portOut",5000);
-	osc.hostOUT = settings.conf_str("osc","hostOut","localhost");
-	osc.base64 = settings.conf_bool("osc","base64",false);
-	osc.prefix = settings.conf_str("osc","prefix","");
-	osc.cmdmap = settings.conf_str("osc","commands","default");
+	osc.portOUT     = settings.conf_int("osc","portOut",5000);
+	osc.hostOUT     = settings.conf_str("osc","hostOut","localhost");
+	osc.base64      = settings.conf_bool("osc","base64",false);
+	osc.prefix      = settings.conf_str("osc","prefix","");
+	osc.cmdmap      = settings.conf_str("osc","commands","default");
 
 	//PLAYER SETTINGS COMMAND LINE
-	if (ofxArgParser::hasKey("name")) player.name = ofxArgParser::getValue("name");
-	if (ofxArgParser::hasKey("info")) player.info = (ofToInt(ofxArgParser::getValue("info")) == 1);	
-	if (ofxArgParser::hasKey("volume")) player.volume = ofToInt(ofxArgParser::getValue("volume"));
-	if (ofxArgParser::hasKey("ahdmi")) player.ahdmi = (ofToInt(ofxArgParser::getValue("ahdmi")) == 1);
-	if (ofxArgParser::hasKey("zoom")) player.zoom = ofToInt(ofxArgParser::getValue("zoom"));
-	if (ofxArgParser::hasKey("blur")) player.blur = ofToInt(ofxArgParser::getValue("blur"));
-	if (ofxArgParser::hasKey("gl")) player.textured = (ofToInt(ofxArgParser::getValue("gl")) == 1);
+	if (ofxArgParser::hasKey("name")) player.name       = ofxArgParser::getValue("name");
+	if (ofxArgParser::hasKey("info")) player.info       = (ofToInt(ofxArgParser::getValue("info")) == 1);	
+	if (ofxArgParser::hasKey("volume")) player.volume   = ofToInt(ofxArgParser::getValue("volume"));
+	if (ofxArgParser::hasKey("ahdmi")) player.ahdmi     = (ofToInt(ofxArgParser::getValue("ahdmi")) == 1);
+	if (ofxArgParser::hasKey("zoom")) player.zoom       = ofToInt(ofxArgParser::getValue("zoom"));
+	if (ofxArgParser::hasKey("blur")) player.blur       = ofToInt(ofxArgParser::getValue("blur"));
+	if (ofxArgParser::hasKey("gl")) player.textured     = (ofToInt(ofxArgParser::getValue("gl")) == 1);
 
 	//COMMAND WITH MEDIA PATH
 	if (ofxArgParser::hasKey("path")) player.basepath( ofxArgParser::getValue("path") );
