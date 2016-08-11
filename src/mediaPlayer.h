@@ -76,7 +76,7 @@ class mediaPlayer : public omListener, public sndListener
 
         void clearscreen(); /*!< \todo implementation (?) */
         sndPlayer* sound; /*!< handle audion content */
-        omPlayer* video; /*!< handle video content */
+        omPlayer*  video; /*!< handle video content */
         imgPlayer* image; /*!< handle image content */
         string  basePath; /*!< base directory to load files from */
         vector<ofFile>  mediaFiles; /*!< files to play */
