@@ -314,6 +314,7 @@ void mediaPlayer::next()
 void mediaPlayer::onVideoEnd()
 {
     this->next();
+    sound->stop();
 }
 
 
