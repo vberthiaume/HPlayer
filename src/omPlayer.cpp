@@ -107,7 +107,7 @@ void omPlayer::iceBreak()
 	if (this->listener != NULL)
 	{
 		//FILE REACH THE END
-		//if ((currentFrame == maxFrame) and (lastFrame < maxFrame)) listener->onVideoEnd();
+		if ((currentFrame == maxFrame) and (lastFrame < maxFrame)) listener->onVideoEnd();
 		//FREEZE detection (due to wrong frame counter)
 		if ((currentFrame == lastFrame) && (!this->isPaused())) 
 		{
@@ -169,7 +169,7 @@ void omPlayer::show()
 	if (!this->isPlaying()) return;
 
 	//ANTI FREEZE
-	this->iceBreak();
+	//this->iceBreak();
 
 	//CHECK IF TEXTURE MODE ENABLED AND VALID
 	if(!this->isTextureEnabled()) return;
