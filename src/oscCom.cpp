@@ -302,6 +302,8 @@ void oscCom::status(mediaPlayer* player, string response_prefix)
 
 	ofxOscMessage m;
 	m.setAddress(response_prefix+"/status");
+    
+    //NAME
 	m.addStringArg(player->name);
 
 	string filepath = player->media();
@@ -309,12 +311,16 @@ void oscCom::status(mediaPlayer* player, string response_prefix)
 
 	if (player->isPlaying())
 	{
+        //STATUS
 		if (player->isPaused()) m.addStringArg("paused");
 		else m.addStringArg("playing");
-		
+		//FILE
 		m.addStringArg(filepath);
+        //POSITION
 		m.addIntArg(player->getPositionMs());
+        //DURATION
 		m.addIntArg(player->getDurationMs());
+        //LOOPING
 		m.addIntArg( (player->loop) ? 1 : 0 );
 	}
 	else 
@@ -326,12 +332,16 @@ void oscCom::status(mediaPlayer* player, string response_prefix)
 		m.addIntArg( (player->loop) ? 1 : 0 );
 	}
 	
+    //VOLUME
 	m.addIntArg(player->volume);
 	
+    //MUTED
 	if (player->mute) m.addStringArg("muted");
 	else m.addStringArg("unmuted");
 
+    //ZOOM
 	m.addIntArg(player->zoom);
+    //BLUR
 	m.addIntArg(player->blur);
 
 	oscSender.sendMessage(m,false);
